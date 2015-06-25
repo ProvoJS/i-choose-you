@@ -1,0 +1,37 @@
+ /*------------------------------------*\
+    #MEDIA
+\*------------------------------------*/
+
+/**
+ * Styling for Media object
+ * 
+ * Borrowed from:
+ * https://github.com/inuitcss/objects.media
+ */
+
+.Media {
+  display: block;
+}
+
+.Media_img,
+.Media_bdy {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Media_img {
+  margin-right: 8px;
+}
+
+.Media_img > img {
+  display: block;
+}
+
+.Media_bdy {
+  overflow: hidden;
+}
+
+.Media_bdy,
+.Media_bdy > :last-child {
+  margin-bottom: 0;
+}

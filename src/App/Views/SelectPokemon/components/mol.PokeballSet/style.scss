@@ -1,0 +1,13 @@
+@import 'tools.mixins';
+
+.PokeballSet {
+  @include transition(all .25s);
+}
+
+.PokeballSet li {
+  list-style: none;
+}
+
+.PokeballSet input[type="radio"] {
+  display: none;
+}

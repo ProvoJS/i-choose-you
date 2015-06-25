@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    #TYPOGRAPHY_SETTINGS
+\*------------------------------------*/
+
+// Typography
+// ==========================================================================
+
+// Font Weights
+$extra-light:           100;
+$light:                 300;
+$normal:                500;
+$bold:                  700;
+$extra-bold:            900;
+
+// Font Families
+$courier-font-family:     "Courier New", Courier, monospace !default;
+
+// Base Font
+$base-font-family:      $courier-font-family;
+$base-font-weight:      $light;
+
+// Heading Font
+$header-font-family:    $courier-font-family !default;
+$header-font-weight:    $extra-bold;
+
+
+

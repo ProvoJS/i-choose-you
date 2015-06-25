@@ -1,0 +1,45 @@
+@import 'tools.flex-mixins';
+
+.FlexGroup {
+  @include flexbox();
+}
+
+.FlexGroup-FlexDirection-column {
+  @include flex-direction(column)
+}
+
+.FlexGroup-FlexWrap-wrap {
+  @include flex-wrap(wrap)
+}
+.FlexGroup-FlexWrap-wrap-reverse {
+  @include flex-wrap(wrap-reverse)
+}
+
+/**
+ * Align Items
+ */
+.FlexGroup-AlignItems-start {
+  @include align-items(flex-start);
+}
+.FlexGroup-AlignItems-end {
+  @include align-items(flex-end);
+}
+.FlexGroup-AlignItems-center {
+  @include align-items(center);
+}
+.FlexGroup-AlignItems-stretch {
+  @include align-items(stretch);
+}
+
+/**
+ * Justify Content
+ */
+.FlexGroup-JustifyContent-end {
+  @include justify-content(flex-end);
+}
+.FlexGroup-JustifyContent-center {
+  @include justify-content(center);
+}
+.FlexGroup-JustifyContent-space-between {
+  @include justify-content(space-between);
+}

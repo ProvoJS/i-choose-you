@@ -1,0 +1,72 @@
+@import 'tools.mixins';
+@import 'settings.colors';
+
+.SelectPokemon_btn {
+  background: none;
+  border: solid 3px white;
+  outline: none;
+  padding: 15px;
+  @include transition(all .25s ease);
+}
+
+.SelectPokemon_btn:hover {
+  padding: 15px 90px;
+}
+
+.SelectPokemon_name {
+  font-size: 4em;
+  color: white;
+  @include transition(color .25s ease); 
+}
+
+.SelectPokemon_btn.fireType {
+  border-color: $clr-fire;
+}
+.SelectPokemon_name.fireType {
+  color: $clr-fire;
+}
+.SelectPokemon_btn.waterType {
+  border-color: $clr-water;
+}
+.SelectPokemon_name.waterType {
+  color: $clr-water;
+  border-color: $clr-water;
+}
+.SelectPokemon_btn.grassType {
+  border-color: $clr-grass;
+}
+.SelectPokemon_name.grassType {
+  color: $clr-grass;
+  border-color: $clr-grass;
+}
+
+.SelectPokemon_showcase {
+  position: relative;
+  max-height: 0;
+  text-align: center;
+  @include transition(all 1s cubic-bezier(0.47, 0.26, 0.57, 1.58));
+}
+
+.SelectPokemon_showcase img {
+  @include transition(all 1s ease);
+
+}
+
+.SelectPokemon_showcase.isOpen {
+  max-height: 500px;
+  @include animation(delayed-opacity 1s cubic-bezier(0.47, 0.26, 0.57, 1.58));
+}
+
+
+
+@include keyframes(delayed-opacity) {
+  0%{
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,36 @@
+@import 'tools.mixins';
+@import 'settings.colors';
+
+.Pokeball {
+  cursor: pointer;
+}
+
+.Pokeball:hover {
+  @include animation(wiggle .2s linear);
+  @include animation-iteration-count(2);
+}
+
+.Pokeball g {
+  @include transition(all 1s ease);
+}
+
+.Pokeball-fire.Pokeball-isActive g {
+  fill: $clr-fire;
+}
+
+.Pokeball-water.Pokeball-isActive g {
+  fill: $clr-water;
+}
+
+.Pokeball-grass.Pokeball-isActive g {
+  fill: $clr-grass;
+}
+
+@include keyframes(wiggle) {
+  25% {
+    @include transform(rotate(12deg));
+  }
+  75% {
+    @include transform(rotate(-2deg));
+  }
+}
